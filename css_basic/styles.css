@@ -1,6 +1,9 @@
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
 }
 main {
   display: flex;
@@ -10,8 +13,88 @@ main {
 article {
   flex: 2;
   overflow-y: auto;
+  background-color: rgb(21, 11, 58);
+  border-radius: 10px;
+  border: 2px solid gray;
+  margin: 10px;
+  padding: 5px;
 }
 aside {
   flex: 1;
+  background-color: rgb(21, 11, 58);
+  padding: 5px;
+
   overflow-y: auto;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+
+  padding: 4px;
+}
+a {
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  background-color: rgb(21, 11, 58);
+
+  color: white;
+  border-radius: 20px;
+  padding: 10px 6px 10px 6px;
+}
+li:hover {
+  color: white;
+  background: rgb(20, 20, 20);
+  border-radius: 20px;
+  padding: 10px 4px 10px 4px;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 30px;
+  background-clip: text;
+  padding-left: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+p {
+  font-size: 16px;
+  color: white;
+  margin-left: 30px;
+}
+.twitter-tweet {
+  background-color: rgb(41, 25, 99);
+  border-radius: 20px;
+  padding: 7px;
+  color: white;
+  margin-top: 20px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(21, 11, 58);
+  width: 100%;
+  padding: 20px 10px 20px 10px;
 }
